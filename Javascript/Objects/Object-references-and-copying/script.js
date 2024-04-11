@@ -70,3 +70,32 @@ const originalObject = {
 const clonedObject = structuredClone(originalObject);
 
 */
+
+const originalObj = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  address: {
+    city: "Jhansi",
+    pincode: 284003,
+    contact: {
+      phone: 9193983,
+      mail: "abc@email.com",
+    },
+  },
+};
+
+// const copiedObj = { ...originalObj };
+// const copiedObj = Object.assign({}, originalObj);
+const copiedObj = JSON.parse(JSON.stringify(originalObj));
+
+copiedObj.age = 31;
+
+copiedObj.address.city = "Agra";
+copiedObj.address.pincode = 140021;
+
+copiedObj.address.contact.mail = "xyz@outlook.com";
+copiedObj.address.contact.phone = 800302829;
+
+console.log("Original Object:", originalObj);
+console.log("Copied Object:", copiedObj);
