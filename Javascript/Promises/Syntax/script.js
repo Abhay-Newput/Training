@@ -57,3 +57,34 @@ myPromise
   .finally(() => {
     console.log("Promise completed!");
   });
+
+
+
+  function xyz(arr, callback){
+    //..
+    //...
+
+    callback
+  }
+
+  
+
+  function abc{
+
+    ///
+  }
+
+  xyz(arr, abc());
+
+let a = function xyz(){
+  ///
+}
+
+let b = function(){
+  ///
+}
+
+
+function(){
+  ///
+}

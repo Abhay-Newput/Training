@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5rem;
+      "
+    >
+      <div>
+        class="main lola" >
+        <h1 id="heading">DOM Manipulation</h1>
+        <div class="list-container">
+          <ul id="list-items">
+            <li class="list">List One</li>
+            <li class="list">List Two</li>
+            <li class="list">List Three</li>
+            <li class="list">List Four</li>
+            <li class="list">List Five</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a href="#" onclick="displayDate()" style="text-decoration: none"
+          >LINK</a
+        >
+      </div>
+    </div>
+
+    <div class="img">
+      <img
+        src="images/image-product-desktop.jpg"
+        style="height: 200px; width: 200px"
+        alt=""
+      />
+    </div>
+
+    <div class="curd">
+      <div class="div"></div>
+    </div>
+
+    <form name="myForm" onsubmit="validateForm()">
+      Name: <input type="text" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <br />
+    <button style="margin: 3rem" id="myButton">Click me</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
