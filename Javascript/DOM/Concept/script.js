@@ -26,12 +26,15 @@ console.log(eleQAll);
 //Manipulating Elements------------>
 
 //Inner Text
-eleId.innerText = "Inner Text";
+eleId.innerText = "<h4>Inner Text</h4>";
 console.log(eleId.innerText);
 
-//Tect Content
-eleId.textContent = "Hi now text Content";
+//Text Content
+eleId.textContent = "<h4> Hi now text Content </h4>";
 console.log(eleId.textContent);
+
+//Inner Html
+eleId.innerHTML = " <h2> Hi There </h2>";
 
 //inner html
 eleImgs = document.getElementsByClassName("img");
