@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Examples</title>
+  </head>
+  <body>
+    <div id="myDiv" class="example" data-info="Some custom data">Hello</div>
+
+    <script>
+      // Retrieve the value of the 'id' attribute
+      const element = document.getElementById("myDiv");
+      const idValue = element.getAttribute("id");
+      console.log("ID Attribute Value:", idValue); // Output: "myDiv"
+
+      // Retrieve the value of the 'data-info' attribute
+      const dataInfoValue = element.getAttribute("data-info");
+      console.log("data-info Attribute Value:", dataInfoValue); // Output: "Some custom data"
+
+      // Getting Class
+      const cls = element.getAttribute("class");
+      console.log("Class: ", cls);
+    </script>
+  </body>
+</html>

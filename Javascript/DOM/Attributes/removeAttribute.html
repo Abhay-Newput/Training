@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Examples</title>
+  </head>
+  <body>
+    <div id="myDiv" title="Example"></div>
+
+    <script>
+      const element = document.getElementById("myDiv");
+
+      // Remove the 'title' attribute
+      element.removeAttribute("title");
+      console.log(
+        "Does the element have a title attribute after removal?",
+        element.hasAttribute("title")
+      ); // Output: false
+    </script>
+  </body>
+</html>

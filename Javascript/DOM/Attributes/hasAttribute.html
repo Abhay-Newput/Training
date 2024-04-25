@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Examples</title>
+  </head>
+  <body>
+    <div id="myDiv" title="Example"></div>
+
+    <script>
+      const element = document.getElementById("myDiv");
+
+      // Check if the 'title' attribute exists
+      const hasTitleAttribute = element.hasAttribute("title");
+      console.log(
+        "Does the element have a title attribute?",
+        hasTitleAttribute
+      ); // Output: true
+
+      // Check for a non-existent attribute
+      const hasDataAttribute = element.hasAttribute("data-info");
+      console.log(
+        "Does the element have a data-info attribute?",
+        hasDataAttribute
+      ); // Output: false
+    </script>
+  </body>
+</html>

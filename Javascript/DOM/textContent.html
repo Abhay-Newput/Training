@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textContent Example</title>
+  </head>
+  <body>
+    <div id="myElement">
+      <p>
+        This is some
+        <strong>bold</strong>
+        text content.
+      </p>
+    </div>
+
+    <script>
+      const element = document.getElementById("myElement");
+      console.log("text content", element.textContent); // Output: "This is some bold text content."
+      console.log("Inner text", element.innerText); // Output: "This is some bold text content."
+      console.log("inner html", element.innerHTML); // Output: "This is some bold text content."
+    </script>
+  </body>
+</html>

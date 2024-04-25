@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Examples</title>
+  </head>
+  <body>
+    <div id="myDiv" class="example" data-info="Some custom data"></div>
+
+    <script>
+      const element = document.getElementById("myDiv");
+
+      // Accessing the attributes collection
+      const attributes = element.attributes;
+
+      // Loop through the attributes collection
+      for (let attr of attributes) {
+        console.log(`Attribute Name: ${attr.name}, Value: ${attr.value}`);
+      }
+    </script>
+  </body>
+</html>

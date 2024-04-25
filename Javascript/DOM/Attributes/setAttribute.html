@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Examples</title>
+  </head>
+  <body>
+    <div id="myDiv">HEHEHEHEHEHEH</div>
+
+    <script>
+      // Set the 'class' attribute of the div
+      const element = document.getElementById("myDiv");
+      element.setAttribute("class", "newClass");
+      console.log("Updated class attribute:", element.getAttribute("class")); // Output: "newClass"
+
+      // Add a custom data attribute
+      element.setAttribute("data-info", "New custom data");
+      console.log(
+        "Updated data-info attribute:",
+        element.getAttribute("data-info")
+      ); // Output: "New custom data"
+    </script>
+  </body>
+</html>
