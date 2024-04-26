@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="mySelect"></select>
+
+    <script>
+      let select = document.getElementById("mySelect");
+      let option = new Option("Option text", "optionValue", true, true);
+      let option1 = new Option("Option two", "optionTwo", false, false);
+      select.add(option);
+    </script>
+  </body>
+</html>

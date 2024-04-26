@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset name="personalInfo">
+        <input type="text" name="username" />
+      </fieldset>
+    </form>
+
+    <script>
+      let form = document.forms[0];
+
+      let fieldSet = form.elements.personalInfo;
+      let username = fieldSet.elements.username;
+      console.log(username);
+    </script>
+  </body>
+</html>
