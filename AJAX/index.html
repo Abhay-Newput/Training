@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Example</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <button type="submit">Login</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const responseDiv = document.getElementById("response");
+
+      loginForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form submission
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Create XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
+
+        // Open the request
+        xhr.open("POST", "https://fakestoreapi.com/auth/login", true);
+
+        // Set the request headers
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Handle the response
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Login successful
+              const response = JSON.parse(xhr.responseText);
+              responseDiv.textContent = `Login successful! Token: ${response.token}`;
+            } else {
+              // Login failed
+              const errorMessage =
+                xhr.responseText ||
+                "An error occurred during the login process.";
+              responseDiv.textContent = `Login failed: ${errorMessage}`;
+            }
+          }
+        };
+
+        // Send the request with the login data
+        const loginData = JSON.stringify({ username, password });
+        xhr.send(loginData);
+      });
+    </script>
+  </body>
+</html>
