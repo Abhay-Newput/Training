@@ -30,8 +30,9 @@ var xhhtp = new XMLHttpRequest()
 - **Send a Request To a Server**
 
   - GET Request
-    xhttp.open("GET", "ajax_info.txt", true); // open(method, url, async)
-    xhttp.send();
+
+        xhttp.open("GET", "ajax_info.txt", true); // open(method, url, async)
+        xhttp.send();
 
   - POST Request
     To POST data like an HTML form, add an HTTP header with setRequestHeader(). Specify the data you want to send in the send() method:
