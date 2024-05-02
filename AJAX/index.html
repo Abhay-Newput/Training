@@ -41,7 +41,7 @@
             if (xhr.status === 200) {
               // Login successful
               const response = JSON.parse(xhr.responseText);
-              responseDiv.textContent = `Login successful! Token: ${response.token}`;
+              responseDiv.textContent = `Login successful!`;
             } else {
               // Login failed
               const errorMessage =
