@@ -1,3 +1,16 @@
+# Singleton Design Pattern
+
+The Singleton design pattern is a creational pattern that ensures a class has only one instance and provides a global point of access to it. In other words, it restricts the instantiation( Instantiation is the process of creating an instance (or object) from a class. ) of a class to one object.
+The key characteristics of the Singleton pattern are:
+
+- Single Instance: The class can have only one instance at a time.
+
+- Global Access Point: The single instance is accessible globally through a single well-known access point.
+
+- Lazy Initialization: The instance is created only when it is first requested, not at the time of class loading.
+
+- Thread-safe: The implementation ensures that the instance is created in a thread-safe manner, preventing multiple instances from being created by different threads.
+
 # Instance
 
 An object created from a class.
@@ -20,3 +33,15 @@ So in easy words:
 They are two sides of the same coin. The word "instance" emphasizes the object's relationship to its class, while the word "object" refers to the self-contained run-time entity.
 
 ### An instance is nothing but an object created from a class blueprint or definition.
+
+## Thread
+
+A thread is a path of execution within a program, and modern software applications often have multiple threads running concurrently to improve performance and responsiveness. However, when multiple threads access and modify shared resources (such as variables, objects, or files) without proper synchronization, it can lead to unpredictable and incorrect results.
+
+### A thread is a path of execution within a process. It is a lightweight unit of processing that allows a single process to perform multiple tasks concurrently.
+
+## Thread-safety
+
+Thread-safety is a concept in computer programming that deals with ensuring that a resource or piece of code can be accessed safely by multiple threads concurrently without causing data corruption, race conditions, or other unexpected behaviors.
+
+For a resource or piece of code to be thread-safe, it means that it can be accessed and modified by multiple threads simultaneously without causing any issues.
